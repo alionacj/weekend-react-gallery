@@ -24,6 +24,7 @@ function GalleryItem({item, getGallery}) {
                 {item.title}
                 Likes: {item.likes}
                 <LikeButton 
+                    data-testid="like"
                     id={item.id}
                     getGallery={getGallery}
                 />
@@ -31,11 +32,12 @@ function GalleryItem({item, getGallery}) {
         )
     } else {
         return (
-            <p 
+            <div 
+                data-testid="description"
                 onClick={hoverOff}
             >
             {item.description}
-            </p>
+            </div>
         )
     }
 

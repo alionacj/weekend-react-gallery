@@ -29,15 +29,18 @@ function GalleryList() {
     }
 
     return (
-        <>
+        <div
+            data-testid="galleryList"
+        >
             {galleryItems.map((item) => (
                 <GalleryItem
+                    data-testid="galleryItem"
                     key={item.id}
                     item={item}
                     getGallery={getGallery}
                 />
             ))}
-        </>
+        </div>
     )
 }
 
