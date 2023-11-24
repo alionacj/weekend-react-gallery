@@ -31,7 +31,11 @@ function GalleryList() {
     return (
         <>
             {galleryItems.map((item) => (
-                <GalleryItem item={item} key={item.id} />
+                <GalleryItem
+                    key={item.id}
+                    item={item}
+                    getGallery={getGallery}
+                />
             ))}
         </>
     )
