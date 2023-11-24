@@ -77,11 +77,11 @@ This is the most complex thing you've built here, so far. We've decided to provi
 #### Server-Side:
 
 * [X] Implement the `GET /gallery` route so that it will send back the array of gallery item objects as its response.
-* [ ] Implement the `PUT /gallery/like/:id` route so that it will increment a given gallery item's `likes` value by `1` and send back HTTP status code `200` as its response. 
+* [X] Implement the `PUT /gallery/like/:id` route so that it will increment a given gallery item's `likes` value by `1` and send back HTTP status code `200` as its response. 
 
 #### Client-Side:
 
-* [ ] Create a `GalleryList` component that:
+* [X] Create a `GalleryList` component that:
   * [ ] When it loads, obtains the array of gallery item objects from `GET /gallery`, then stores it in a piece of React state.
   * [ ] In its `return` statement, `.map`s through the array of gallery item objects that are stored in React state to display each gallery item.
 * [ ] Create a `GalleryItem` component that:
