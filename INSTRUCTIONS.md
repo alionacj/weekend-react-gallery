@@ -37,8 +37,8 @@ To render images inside your React app, this totally works. Check out the exampl
 For this project, you will create a gallery page to share pictures of things that are important to you.
 
 Users should be able to:
-* [ ] Click on a gallery item to toggle between seeing its image or description text.
-* [ ] Click on a gallery item's "like" button to add a "like" to an image. 
+* [X] Click on a gallery item to toggle between seeing its image or description text.
+* [X] Click on a gallery item's "like" button to add a "like" to an image. 
 
 #### Required Architecture:
 
@@ -87,9 +87,9 @@ This is the most complex thing you've built here, so far. We've decided to provi
 * [X] Create a `GalleryItem` component that:
   * [X] Will be used to display a single gallery item.
   * [X] Expects to receive a single gallery item object as a prop. (These will be rendered inside the `GalleryList`'s `.map`.)
-  * [ ] Toggles between showing the image and description on click. Use [conditional rendering](https://react.dev/learn/conditional-rendering).
+  * [X] Toggles between showing the image and description on click. Use [conditional rendering](https://react.dev/learn/conditional-rendering).
   * [X] Displays a gallery item's current number likes.
-  * [ ] Contains a "like" button that, when clicked, will fire off a `PUT /gallery/like/:id` request.
+  * [X] Contains a "like" button that, when clicked, will fire off a `PUT /gallery/like/:id` request.
 
 ---
 
