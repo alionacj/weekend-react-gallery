@@ -82,11 +82,11 @@ This is the most complex thing you've built here, so far. We've decided to provi
 #### Client-Side:
 
 * [X] Create a `GalleryList` component that:
-  * [ ] When it loads, obtains the array of gallery item objects from `GET /gallery`, then stores it in a piece of React state.
-  * [ ] In its `return` statement, `.map`s through the array of gallery item objects that are stored in React state to display each gallery item.
-* [ ] Create a `GalleryItem` component that:
-  * [ ] Will be used to display a single gallery item.
-  * [ ] Expects to receive a single gallery item object as a prop. (These will be rendered inside the `GalleryList`'s `.map`.)
+  * [X] When it loads, obtains the array of gallery item objects from `GET /gallery`, then stores it in a piece of React state.
+  * [X] In its `return` statement, `.map`s through the array of gallery item objects that are stored in React state to display each gallery item.
+* [X] Create a `GalleryItem` component that:
+  * [X] Will be used to display a single gallery item.
+  * [X] Expects to receive a single gallery item object as a prop. (These will be rendered inside the `GalleryList`'s `.map`.)
   * [ ] Toggles between showing the image and description on click. Use [conditional rendering](https://react.dev/learn/conditional-rendering).
   * [ ] Displays a gallery item's current number likes.
   * [ ] Contains a "like" button that, when clicked, will fire off a `PUT /gallery/like/:id` request.
