@@ -1,11 +1,13 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import { Stack } from "react-bootstrap"
 
 import GalleryItem from "../GalleryItem/GalleryItem"
 
 function GalleryList() {
 
-    // react state
     let [galleryItems, setgalleryItems] = useState([])
 
     // on load, get guests
@@ -13,7 +15,6 @@ function GalleryList() {
     useEffect(() => {
         getGallery()
     }, [])
-
 
     const getGallery = () => {
         axios({
@@ -29,6 +30,7 @@ function GalleryList() {
     }
 
     return (
+        <div className="container">
         <div
             data-testid="galleryList"
         >
@@ -40,6 +42,7 @@ function GalleryList() {
                     getGallery={getGallery}
                 />
             ))}
+        </div>
         </div>
     )
 }

@@ -4,13 +4,28 @@ const pool = require('../modules/pool');
 
 // PUT /gallery/like/:id
 router.put('/like/:id', (req, res) => {
+
+  console.log(req.body.data)
+
   const id = req.params.id
-  const sqlQueryText = 
+  let sqlQueryText
+
+  // if (req.body) {
+    sqlQueryText = 
     `
       UPDATE gallery
       SET likes = likes + 1
       WHERE id = ${id}
     `
+  // } else {
+  //   sqlQueryText = 
+  //   `
+  //     UPDATE gallery
+  //     SET likes = likes - 1 
+  //     WHERE id = ${id}
+  //   `
+  // }
+
   pool.query(sqlQueryText)
     .then((result) => {
       res.sendStatus(200)

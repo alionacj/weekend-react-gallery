@@ -55,7 +55,7 @@ Users should be able to:
   * [X] Each GalleryItem must display the title.
   * [X] Each GalleryItem must toggle between showing the image and the description when clicked:
     * [X] When clicking on a GalleryItem, the description shows and the image hides, and vice versa upon clicking again.
-    * [ ] The element that a user clicks to toggle must have the `data-testid="toggle"` attribute.
+    * [X] The element that a user clicks to toggle must have the `data-testid="toggle"` attribute.
     * [X] A GalleryItem's image must be an `img` tag.
     * [X] The element that contains a GalleryItem's description text must have the `data-testid="description"` attribute.
   * [X] Each GalleryItem must have a way to like a post when clicking on an element with `data-testid="like"`
